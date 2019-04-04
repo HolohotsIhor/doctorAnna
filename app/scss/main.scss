@@ -3,7 +3,7 @@
 1.  Fonts including
 2.  General styles
 3.  Header
-4.  Work zone
+4.  Slider
 5.  Why-us
 6.  Clients
 7.  Counter
@@ -47,9 +47,9 @@ $padding-small: 80px 0px;
 $typography-color-standart: 16px;
 $dark: #212121;
 $white: #fff;
-$dark-blue: #1d1f2e;
+$dark-blue: #442568;
 $light-blue: #2a2d40;
-$blue: #347ffb;
+$blue: #c29bee;
 
 body {
     color: #787878;
@@ -132,6 +132,8 @@ header {
 
 
     .logo-box {
+        padding-top: 2px;
+
         @media only screen and (max-device-width: 767px) {
             text-align: center;
         }
@@ -164,7 +166,7 @@ header {
             }
 
             .name-box {
-                padding-top: 10px;
+                padding-top: 1px;
 
                 @media only screen and (max-device-width: 767px) {
                     display: inline-block;
@@ -179,7 +181,7 @@ header {
                 .top-string {
                     font-size: 34px;
                     letter-spacing: -4px;
-                    padding-top: 7px;
+                    padding-top: 9px;
 
                     @media only screen and (max-device-width: 1199px) {
                         font-size: 24px;
@@ -189,12 +191,12 @@ header {
 
                 .bottom-string {
                     letter-spacing: 0px;
-                    font-size: 16px;
+                    font-size: 19px;
                     padding-top: 4px;
                     font-family: "Open-Sans-Bold", sans-serif, Arial;
 
                     @media only screen and (max-device-width: 1199px) {
-                        font-size: 11px;
+                        font-size: 13px;
                         padding-top: 0px;
                     }
                 }
@@ -203,7 +205,7 @@ header {
     }
 
     .work-time {
-        padding-top: 12px;
+        padding-top: 8px;
 
         @media only screen and (max-device-width: 767px) {
             display: none;
@@ -267,14 +269,14 @@ header {
                 }
 
                 i {
-                    color: #a9b3d1;
+                    color: $white;
                     font-size: 1rem;
                     transition: .2s;
                     margin-top: 2px;
                 }
 
                 a:hover i {
-                    color: $white;
+                    color: #d2b3f5;
                 }
             }
 
@@ -409,7 +411,8 @@ header {
             a{
                 color: $white;
                 letter-spacing: -1px;
-                margin-right: 10px;
+                margin-right: 20px;
+                line-height: 30px;
 
                 &:hover{
                     text-decoration: underline;
@@ -445,7 +448,7 @@ header {
                             font-size: 14px;
 
                             &:hover {
-                                color: #a9b3d1;
+                                color: #c3cdec;
                             }
                         }
                     }
@@ -659,8 +662,9 @@ header {
     }
 }
 
-/* 4. Work zone */
-.main_head {
+/* 4. Slider */
+.slider {
+    padding: 95px 0 0 0;
     background-color: $dark-blue;
     height: auto;
     background: url(../img/background.jpg) center 0 repeat fixed;
@@ -669,6 +673,44 @@ header {
     width: 100%;
     max-width: 1920px;
     position: relative;
+
+    .carousel-indicators{
+
+        li{
+            background-color: #9c72cb;
+
+            &.active{
+                background-color: rgb(210, 179, 245);
+            }
+        }
+    }
+
+    .carousel-inner{
+
+        .text-box{
+            position: absolute;
+            top: 200px;
+            left: 0;
+            width: 100%;
+            text-align: left;
+            padding-left: 47%;
+
+            h2{
+                color: $light-blue;
+                font-family: "Open-Sans-Bold", sans-serif, Arial;
+                font-size: 50px;
+                line-height: 50px;
+                margin-bottom: 15px;
+                text-transform: uppercase;
+            }
+
+            p{
+                font-family: "Open-Sans-Regular", sans-serif, Arial;
+                color: $dark-blue;
+                font-size: 26px;
+            }
+        }
+    }
 
     .menu-box {
         background-color: $white;
@@ -877,7 +919,7 @@ header {
     }
 }
 
-/* 4.  Work zone */
+/* 4.  Slider */
 .main_head {
     padding: 260px 0 150px 0;
 
@@ -918,25 +960,25 @@ header {
     }
 
     input::-webkit-input-placeholder {
-        color: #a9b3d1;
+        color: #c3cdec;
         font-family: "Open-Sans-Light", sans-serif, Arial;
         font-size: 14px;
     }
 
     input::-moz-placeholder {
-        color: #a9b3d1;
+        color: #c3cdec;
         font-family: "Open-Sans-Light", sans-serif, Arial;
         font-size: 14px;
     }
 
     textarea::-webkit-input-placeholder {
-        color: #a9b3d1;
+        color: #c3cdec;
         font-family: "Open-Sans-Light", sans-serif, Arial;
         font-size: 14px;
     }
 
     textarea::-moz-placeholder {
-        color: #a9b3d1;
+        color: #c3cdec;
         font-family: "Open-Sans-Light", sans-serif, Arial;
         font-size: 14px;
     }
@@ -1090,8 +1132,8 @@ header {
 
 /* 5.  Why-us */
 .why-us {
-    background: #171a37;
-    background: linear-gradient(180deg, #171a37 0, #3e293d);
+    background: #442568;
+    background: linear-gradient(180deg, #442568 0, #5a3788);
     color: $white;
     text-align: center;
 
@@ -1101,11 +1143,12 @@ header {
         }
 
         .box-wrapper {
-            background: #3c3f5c url(../img/texture.png) bottom repeat-x;
+            background: #fff url(../img/texture.png) bottom repeat-x;
             padding: 100px 30px 80px 30px;
             transition: .5s;
             cursor: pointer;
             border-radius: 5px;
+            color: #1d1f2e;
 
             @media only screen and (max-device-width: 767px) {
                 padding: 70px 30px 40px 30px;
@@ -1137,7 +1180,8 @@ header {
                 margin-bottom: 40px;
 
                 i {
-                    font-size: 40px;
+                    font-size: 55px;
+                    color: $dark-blue;
                 }
             }
         }
@@ -1263,7 +1307,7 @@ header {
 
 /* 7.  Counter */
 .counter {
-    background: #171a37;
+    background: #442568;
     text-align: center;
 
     .counter-box {
@@ -1467,11 +1511,11 @@ footer {
     a{  
         font-size: 13px;
         letter-spacing: 0px;
-        color: $white;
+        color: $blue;
         font-family: "Open-Sans-Bold", sans-serif, Arial;
 
         &:hover{
-            color: $white;
+            color: $blue;
             text-decoration: underline;
         }
     }
