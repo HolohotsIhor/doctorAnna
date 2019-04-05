@@ -36,18 +36,5 @@ $(document).ready(function() {
         delay: 10,
         time: 1000
     });
-
-    /*Scrool animation*/
-    $(window).scroll(function() {
-        $('.mov').each(function() {
-            var imagePos = $(this).offset().top;
-            var topOfWindow = $(window).scrollTop();
-            if (imagePos < topOfWindow + 500) {
-                $(this).addClass('fadeIn');
-                $(this).css('opacity', '1');
-            }
-        });
-    });
-
 // end
 });

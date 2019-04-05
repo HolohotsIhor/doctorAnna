@@ -74,8 +74,8 @@ h1 {
       font-size: 30px; } }
 
 h2 {
-  font-size: 36px;
-  margin-bottom: 50px; }
+  font-size: 34px;
+  margin-bottom: 30px; }
   @media only screen and (max-device-width: 991px) {
     h2 {
       margin-bottom: 20px;
@@ -101,68 +101,72 @@ header {
   @media only screen and (max-device-width: 991px) {
     header {
       position: absolute; } }
-  header .logo-box {
-    padding-top: 2px; }
-    @media only screen and (max-device-width: 767px) {
-      header .logo-box {
-        text-align: center; } }
-    header .logo-box a {
-      color: #fff;
-      font-family: "Open-Sans-Regular", sans-serif, Arial;
-      font-size: 22px; }
-      header .logo-box a .logo-box {
-        float: left; }
+  @media only screen and (max-device-width: 767px) {
+    header .logo-box {
+      text-align: center; } }
+  header .logo-box a {
+    color: #fff;
+    font-family: "Open-Sans-Regular", sans-serif, Arial;
+    font-size: 22px; }
+    header .logo-box a .logo-box {
+      float: left; }
+      @media only screen and (max-device-width: 767px) {
+        header .logo-box a .logo-box {
+          display: inline-block;
+          float: unset;
+          margin-top: -40px; } }
+      header .logo-box a .logo-box img {
+        max-width: 60px;
+        margin-right: 10px; }
+        @media only screen and (max-device-width: 991px) {
+          header .logo-box a .logo-box img {
+            max-width: 50px;
+            margin-right: 0px;
+            padding-top: 4px; } }
         @media only screen and (max-device-width: 767px) {
-          header .logo-box a .logo-box {
-            display: inline-block;
-            float: unset;
+          header .logo-box a .logo-box img {
             margin-top: -40px; } }
-        header .logo-box a .logo-box img {
-          max-width: 60px;
-          margin-right: 10px; }
-          @media only screen and (max-device-width: 767px) {
-            header .logo-box a .logo-box img {
-              margin-top: -40px;
-              max-width: 55px;
-              margin-right: 5px; } }
-      header .logo-box a .name-box {
-        padding-top: 1px; }
-        @media only screen and (max-device-width: 767px) {
-          header .logo-box a .name-box {
-            display: inline-block; } }
-        header .logo-box a .name-box p {
-          line-height: 20px;
-          margin-bottom: 0;
-          text-transform: uppercase; }
-        header .logo-box a .name-box .top-string {
-          font-size: 34px;
-          letter-spacing: -4px;
-          padding-top: 9px; }
-          @media only screen and (max-device-width: 1199px) {
-            header .logo-box a .name-box .top-string {
-              font-size: 24px;
-              letter-spacing: -3px; } }
-        header .logo-box a .name-box .bottom-string {
-          letter-spacing: 0px;
-          font-size: 19px;
-          padding-top: 4px;
-          font-family: "Open-Sans-Bold", sans-serif, Arial; }
-          @media only screen and (max-device-width: 1199px) {
-            header .logo-box a .name-box .bottom-string {
-              font-size: 13px;
-              padding-top: 0px; } }
-  header .work-time {
-    padding-top: 8px; }
-    @media only screen and (max-device-width: 767px) {
-      header .work-time {
-        display: none; } }
-    header .work-time span {
-      width: 100%;
-      display: block;
-      color: #fff;
-      font-family: "Open-Sans-Light", sans-serif, Arial;
-      font-size: 12px;
-      line-height: 16px; }
+    header .logo-box a .name-box {
+      padding-top: 1px; }
+      @media only screen and (max-device-width: 767px) {
+        header .logo-box a .name-box {
+          display: inline-block; } }
+      header .logo-box a .name-box p {
+        line-height: 20px;
+        margin-bottom: 0;
+        text-transform: uppercase; }
+      header .logo-box a .name-box .top-string {
+        font-size: 55px;
+        letter-spacing: -4px;
+        padding-top: 10px;
+        font-family: "Open-Sans-Light", sans-serif, Arial; }
+        @media only screen and (max-device-width: 1199px) {
+          header .logo-box a .name-box .top-string {
+            font-size: 46px;
+            letter-spacing: -3px; } }
+      header .logo-box a .name-box .bottom-string {
+        letter-spacing: 0px;
+        font-size: 12px;
+        padding-top: 10px;
+        font-family: "Open-Sans-Regular", sans-serif, Arial; }
+        @media only screen and (max-device-width: 1199px) {
+          header .logo-box a .name-box .bottom-string {
+            font-size: 11px;
+            letter-spacing: -1px;
+            padding-top: 5px; } }
+  @media only screen and (max-device-width: 767px) {
+    header .work-time {
+      display: none; } }
+  header .work-time span {
+    width: 100%;
+    display: block;
+    color: #fff;
+    font-family: "Open-Sans-Light", sans-serif, Arial;
+    font-size: 12px;
+    line-height: 20px; }
+    @media only screen and (max-device-width: 1199px) {
+      header .work-time span {
+        line-height: 18px; } }
   header .__navigation-box .social-icons-box {
     display: inline-block;
     width: 100%; }
@@ -185,7 +189,7 @@ header {
           display: inline-block;
           float: unset; } }
       header .__navigation-box .social-icons-box .social-wrapper a {
-        margin-right: 10px;
+        margin-right: 5px;
         padding: 5px 12px;
         background-color: #2a2d40;
         -webkit-border-radius: 50%;
@@ -314,14 +318,17 @@ header {
         display: none; } }
     header .__navigation-box .phones a {
       color: #fff;
-      letter-spacing: -1px;
+      letter-spacing: 0;
       margin-right: 20px;
       line-height: 30px; }
       header .__navigation-box .phones a:hover {
         text-decoration: underline; }
   header .__navigation-box .main-navigation {
     text-align: right;
-    padding-top: 5px; }
+    padding-top: 7px; }
+    @media only screen and (max-device-width: 1199px) {
+      header .__navigation-box .main-navigation {
+        padding-top: 3px; } }
     @media only screen and (max-device-width: 991px) {
       header .__navigation-box .main-navigation {
         display: none; } }
@@ -329,7 +336,7 @@ header {
       margin-bottom: 0; }
       header .__navigation-box .main-navigation nav ul li {
         display: inline-block;
-        margin-right: 40px; }
+        margin-right: 50px; }
         header .__navigation-box .main-navigation nav ul li:last-child {
           margin-right: 0px; }
         header .__navigation-box .main-navigation nav ul li a {
@@ -355,7 +362,7 @@ header {
       border: none;
       right: 20px;
       top: 5px;
-      background: #1d1f2e;
+      background: #442568;
       display: none;
       z-index: 999; }
       @media only screen and (max-device-width: 991px) {
@@ -515,6 +522,17 @@ header {
   max-width: 1920px;
   position: relative;
   /* Mobile navigation */ }
+  @media only screen and (max-device-width: 767px) {
+    .slider {
+      padding-top: 139px; } }
+  @media only screen and (max-device-width: 767px) {
+    .slider img {
+      display: none !important; } }
+  .slider img.mobile {
+    display: none !important; }
+    @media only screen and (max-device-width: 767px) {
+      .slider img.mobile {
+        display: block !important; } }
   .slider .carousel-indicators li {
     background-color: #9c72cb; }
     .slider .carousel-indicators li.active {
@@ -526,17 +544,42 @@ header {
     width: 100%;
     text-align: left;
     padding-left: 47%; }
+    @media only screen and (max-device-width: 1400px) {
+      .slider .carousel-inner .text-box {
+        top: 120px; } }
+    @media only screen and (max-device-width: 1199px) {
+      .slider .carousel-inner .text-box {
+        top: 90px; } }
+    @media only screen and (max-device-width: 767px) {
+      .slider .carousel-inner .text-box {
+        top: 150px; } }
+    @media only screen and (max-device-width: 600px) {
+      .slider .carousel-inner .text-box {
+        top: 80px; } }
     .slider .carousel-inner .text-box h2 {
       color: #2a2d40;
       font-family: "Open-Sans-Bold", sans-serif, Arial;
       font-size: 50px;
       line-height: 50px;
       margin-bottom: 15px;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      opacity: 0;
+      -webkit-animation-duration: 1s;
+              animation-duration: 1s; }
+      @media only screen and (max-device-width: 1199px) {
+        .slider .carousel-inner .text-box h2 {
+          font-size: 28px;
+          line-height: 30px; } }
     .slider .carousel-inner .text-box p {
       font-family: "Open-Sans-Regular", sans-serif, Arial;
       color: #442568;
-      font-size: 26px; }
+      font-size: 26px;
+      -webkit-animation-duration: 1.5s;
+              animation-duration: 1.5s; }
+      @media only screen and (max-device-width: 1199px) {
+        .slider .carousel-inner .text-box p {
+          font-size: 20px;
+          line-height: 20px; } }
   .slider .menu-box {
     background-color: #fff;
     width: 100%;
@@ -1110,8 +1153,8 @@ footer {
   footer a {
     font-size: 13px;
     letter-spacing: 0px;
-    color: #c29bee;
-    font-family: "Open-Sans-Bold", sans-serif, Arial; }
+    color: #fff;
+    font-family: "Open-Sans-Regular", sans-serif, Arial; }
     footer a:hover {
       color: #c29bee;
       text-decoration: underline; }
