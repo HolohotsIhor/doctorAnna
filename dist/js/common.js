@@ -28,7 +28,7 @@ $(document).ready(function() {
 
     /* Carousel */
     $('.carousel').carousel({
-        interval: 8000
+        interval: 100000
     })
 
     /* Counter */
